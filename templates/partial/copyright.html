@@ -1,5 +1,7 @@
 <p>&copy; {{ AUTHOR }} {{ COPYRIGHT_YEAR }}</p>
-{% include "partial/flex.html" %}
+{% if not HIDE_FLEX_COPYRIGHT %}
+  {% include "partial/flex.html" %}
+{% endif %}
 {% if STATUSCAKE %}
   {% include "partial/statuscake.html" %}
 {% endif %}

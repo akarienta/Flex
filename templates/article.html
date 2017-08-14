@@ -19,7 +19,7 @@
            category='<a href="%s/%s">%s</a>'|format(SITEURL, article.category.url, article.category)|safe) }}
 
       {% if 'post_stats' in PLUGINS %}
-        &#8226; {{ article.stats['read_mins'] }} min read
+        &#8226; {{ ngettext('%(num)d min read', '%(num)d mins read', article.stats['read_mins']) % {'num': article.stats['read_mins']} }}
       {% endif %}
     </p>
   </header>

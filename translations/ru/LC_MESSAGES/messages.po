@@ -6,11 +6,12 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: 2.0\n"
+"Project-Id-Version:  2.0\n"
 "Report-Msgid-Bugs-To: <groundflyer@users.noreply.github.com>\n"
-"POT-Creation-Date: 2016-08-24 21:51-0300\n"
+"POT-Creation-Date: 2017-08-14 20:52+0200\n"
 "PO-Revision-Date: 2016-10-18 11:46+0500\n"
-"Last-Translator: Roman Saldygashev <groundflyer@users.noreply.github.com>>\n"
+"Last-Translator: Roman Saldygashev "
+"<groundflyer@users.noreply.github.com>>\n"
 "Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
@@ -18,22 +19,30 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.1.1\n"
+"Generated-By: Babel 2.4.0\n"
 
 #: templates/archives.html:2 templates/archives.html:7
 msgid "Archives"
 msgstr "Архивы"
 
-#: templates/article.html:17 templates/index.html:9
+#: templates/article.html:17 templates/index.html:20
 #, python-format
 msgid "Posted on %(when)s in %(category)s"
 msgstr "Опубликовано %(when)s в %(category)s"
 
-#: templates/article.html:41
+#: templates/article.html:22 templates/index.html:32
+#, python-format
+msgid "%(num)d min read"
+msgid_plural "%(num)d mins read"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: templates/article.html:52
 msgid "Like this article? Share it with your friends!"
 msgstr "Понравилась статья? Поделись с друзьями!"
 
-#: templates/article.html:49
+#: templates/article.html:60
 msgid "You might enjoy"
 msgstr "Наслаждайся"
 
@@ -46,15 +55,15 @@ msgstr "Опубликовано %(name)s"
 msgid "Authors"
 msgstr "Авторы"
 
-#: templates/base.html:104
+#: templates/base.html:135
 msgid "Home"
 msgstr "Главная"
 
-#: templates/base.html:111
+#: templates/base.html:142
 msgid "Atom"
 msgstr "Атом"
 
-#: templates/base.html:115
+#: templates/base.html:146
 msgid "RSS"
 msgstr "RSS"
 
@@ -67,11 +76,15 @@ msgstr "Категории"
 msgid "Category %(name)s"
 msgstr "Категория %(name)s"
 
-#: templates/index.html:14
+#: templates/index.html:25
+#, fuzzy
 msgid "Tagged with"
-msgstr "Помечено"
+msgid_plural "Tagged with"
+msgstr[0] "Помечено"
+msgstr[1] ""
+msgstr[2] ""
 
-#: templates/index.html:29
+#: templates/index.html:40
 msgid "Continue reading"
 msgstr "Продолжить чтение"
 
@@ -84,6 +97,11 @@ msgstr "Тэг %(name)s"
 msgid "Tags"
 msgstr "Тэги"
 
+#: templates/partial/cc_license.html:2
+#, python-format
+msgid "This work is licensed under a %(license)s license"
+msgstr ""
+
 #: templates/partial/disqus.html:12
 msgid "Please enable JavaScript to view comments."
 msgstr "Пожалуйста включите JavaScript, чтобы просмотреть комментарии."
@@ -93,7 +111,8 @@ msgstr "Пожалуйста включите JavaScript, чтобы просм�
 msgid ""
 "Powered by %(pelican_url)s - %(flex_url)s theme by "
 "%(alexandrevicenzi_url)s"
-msgstr "Создано с помощью %(pelican_url)s - оформление %(flex_url)s от "
+msgstr ""
+"Создано с помощью %(pelican_url)s - оформление %(flex_url)s от "
 "%(alexandrevicenzi_url)s"
 
 #: templates/partial/pagination.html:5
@@ -101,6 +120,9 @@ msgid "Older Posts"
 msgstr "Старые сообщения"
 
 #: templates/partial/pagination.html:10
-msgid "New Posts"
-msgstr "Новые сообщения"
+msgid "Newer Posts"
+msgstr ""
+
+#~ msgid "New Posts"
+#~ msgstr "Новые сообщения"
 
