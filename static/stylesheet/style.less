@@ -94,13 +94,12 @@ aside {
   @blue_rgb: blue(@color);
 
   background: linear-gradient(
-          rgba(@red_rgb, @green_rgb, @blue_rgb, 0.55),
-          rgba(@red_rgb, @green_rgb, @blue_rgb, 0.55)
-  ),
-    url('../img/background.jpg') -500px top;
-  background-repeat: no-repeat;
+    rgba(@red_rgb, @green_rgb, @blue_rgb, 0.55),
+    rgba(@red_rgb, @green_rgb, @blue_rgb, 0.55)
+  ), url('../img/background.jpg') no-repeat center center;
   color: @sidebar-text-color;
   text-align: center;
+  background-size: 1439px 1080px;
 
   @shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
 
@@ -523,4 +522,10 @@ ul.social {
 
 .highlight {
   background-color: transparent;
+}
+
+@media screen and (min-height: 1080px) {
+  aside {
+    background-position: center top;
+  }
 }
