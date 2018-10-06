@@ -18,6 +18,11 @@
            when=article.locale_date,
            category='<a href="%s/%s">%s</a>'|format(SITEURL, article.category.url, article.category)|safe) }}
 
+      {% if MORE_AUTHORS %}
+        &#8226; {{ _('Post by %(name)s',
+        name='<a href="%s/%s">%s</a>'|format(SITEURL, article.author.url, article.author.name)|safe) }}
+      {% endif %}
+
       {% if 'post_stats' in PLUGINS %}
         &#8226; {{ ngettext('%(num)d min read', '%(num)d mins read', article.stats['read_mins']) % {'num': article.stats['read_mins']} }}
       {% endif %}
