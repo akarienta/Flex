@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-10-06 18:53+0200\n"
-"PO-Revision-Date: 2018-10-06 18:53+0200\n"
+"PO-Revision-Date: 2019-01-06 18:50+0100\n"
 "Last-Translator: \n"
 "Language: cs\n"
 "Language-Team: cs <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
-"X-Generator: Poedit 2.1.1\n"
+"X-Generator: Poedit 2.2\n"
 
 #: templates/archives.html:2 templates/archives.html:7
 msgid "Archives"
@@ -31,7 +31,7 @@ msgstr "Publikováno %(when)s v kategorii %(category)s"
 #: templates/article.html:22 templates/index.html:25
 #, python-format
 msgid "Post by %(name)s"
-msgstr "Napsala %(name)s"
+msgstr "Autor %(name)s"
 
 #: templates/article.html:27 templates/index.html:37
 #, python-format
@@ -110,8 +110,7 @@ msgstr "Pro zobrazení komenářů prosím povolte JavaScript."
 
 #: templates/partial/flex.html:1
 #, python-format
-msgid ""
-"Powered by %(pelican_url)s - %(flex_url)s theme by %(alexandrevicenzi_url)s"
+msgid "Powered by %(pelican_url)s - %(flex_url)s theme by %(alexandrevicenzi_url)s"
 msgstr "Pohání %(pelican_url)s - Šablona %(flex_url)s od %(alexandrevicenzi_url)s"
 
 #: templates/partial/pagination.html:5
